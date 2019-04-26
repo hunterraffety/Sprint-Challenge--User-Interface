@@ -182,7 +182,7 @@ nav {
 nav a {
   padding-right: 60px;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .logo {
@@ -313,3 +313,121 @@ footer nav a {
   text-decoration: none;
 }
 /* end footer styling */
+
+/* about page specific styles */
+
+/* header */
+.about-page header {
+  border-bottom: dashed 1px black;
+  margin-bottom: 29px;
+}
+
+.header-about-text {
+  font-weight: 600;
+  padding-top: 24px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+/* end header */
+
+/* main content styling */
+#main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+.about-plan {
+  text-align: left;
+  width: 50%;
+}
+
+.about-plan:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 96%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+}
+
+.about-working {
+  text-align: left;
+  width: 50%;
+  /* border-bottom: dashed 1px black; */
+  padding-bottom: 30px;
+}
+
+.about-working:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 98%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+}
+
+.about-office {
+  padding-top: 25px;
+  text-align: left;
+  width: 50%;
+}
+
+.about-office:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 96%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+}
+
+.about-meeting {
+  padding-top: 25px;
+  text-align: left;
+  width: 50%;
+}
+
+.about-meeting:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 98%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+}
+
+#main-content img {
+  padding-bottom: 15px;
+}
+
+#main-content a {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 25px;
+  margin-bottom: 25px;
+}
+
+p.main-content-text {
+  padding-bottom: 25px;
+}
+/* end main content styling */
+
+/* about-bottom-content styling */
+#about-bottom-content {
+  padding: 50px 25px;
+}
+
+.about-bottom-text {
+  line-height: 25px;
+  font-weight: 700;
+}
+/* end about-bottom-content styling */
+
+/* footer styling */
+
+/* end footer styling */
+/* end about page specific styles */
