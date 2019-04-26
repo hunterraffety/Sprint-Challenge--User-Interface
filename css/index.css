@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+	v2.0 | 20110126
+	License: none (public domain)
 */
 
 html,
@@ -128,6 +128,7 @@ table {
   border-spacing: 0;
 }
 
+/* general styling */
 * {
   box-sizing: border-box;
 }
@@ -157,6 +158,39 @@ p {
   margin: 0 auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 21px 0 0px 0;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+nav {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 38px;
+}
+
+nav a {
+  padding-right: 60px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.logo {
+  padding-bottom: 38px;
+}
+/* end header styling */
+
+/* top-content styling */
 .top-content {
   display: flex;
   flex-wrap: wrap;
@@ -170,7 +204,9 @@ p {
   padding: 0 1%;
   padding-bottom: 20px;
 }
+/* end top-content styling */
 
+/* middle-content styling */
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
@@ -190,7 +226,7 @@ p {
 .middle-content .boxes .box {
   width: 12.5%;
   height: 100px;
-  background: black;
+  /* background: black; */
   margin: 20px 2.5%;
   color: white;
   display: flex;
@@ -198,6 +234,50 @@ p {
   justify-content: center;
 }
 
+/* ------------ box styling for middle-content ------------ */
+.box1 {
+  background: #008080;
+}
+
+.box2 {
+  background-color: #ffd700;
+}
+
+.box3 {
+  background: #5f9ea0;
+}
+
+.box4 {
+  background: #f88379;
+}
+
+.box5 {
+  background: #dc143c;
+}
+
+.box6 {
+  background: #228b22;
+}
+
+.box7 {
+  background: #9932cc;
+}
+
+.box8 {
+  background: #ff69b4;
+}
+
+.box9 {
+  background: #4b0082;
+}
+
+.box10 {
+  background: #1e90ff;
+}
+/* ---------------- end box-styling --------------- */
+/* end middle-content */
+
+/* bottom-content */
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -211,7 +291,9 @@ p {
 .bottom-content .text-container:last-child {
   padding-right: 0;
 }
+/* end bottom-content styling */
 
+/* footer styling */
 footer {
   width: 100%;
   background: black;
@@ -230,3 +312,4 @@ footer nav a {
   color: white;
   text-decoration: none;
 }
+/* end footer styling */
