@@ -183,6 +183,18 @@ nav a {
   padding-right: 60px;
   font-size: 0.9rem;
   font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+nav a:hover {
+  transform: scale(1.1);
 }
 
 .logo {
@@ -431,3 +443,33 @@ p.main-content-text {
 
 /* end footer styling */
 /* end about page specific styles */
+
+/* contact page specific styles */
+#contact-content {
+  text-align: left;
+  padding: 20px 30px;
+  border-bottom: dashed 1px black;
+}
+
+input[type='text'] {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+input[type='submit'] {
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid black;
+  background: white;
+  margin-top: 12px;
+  margin-left: 5px;
+}
