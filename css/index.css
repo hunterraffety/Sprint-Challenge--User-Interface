@@ -1,146 +1,444 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+	v2.0 | 20110126
+	License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
+/* general styling */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text-container {
+  font-weight: 700;
+}
+
+/* header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  align-items: baseline;
+  /* padding-bottom: 25px; */
+}
+
+header.logo {
+  width: 20%;
+}
+
+nav {
+  display: flex;
+  margin: 0 0 39px 0;
+  width: 80%;
+  justify-content: space-around;
+}
+
+nav a {
+  /* padding-right: 60px; */
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* end header styling */
+
+/* top-content styling */
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
+/* end top-content styling */
 
+/* middle-content styling */
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  /* background: black; */
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* ------------ box styling for middle-content ------------ */
+.box1 {
+  background: #008080;
+}
+
+.box2 {
+  background-color: #ffd700;
+}
+
+.box3 {
+  background: #5f9ea0;
+}
+
+.box4 {
+  background: #f88379;
+}
+
+.box5 {
+  background: #dc143c;
+}
+
+.box6 {
+  background: #228b22;
+}
+
+.box7 {
+  background: #9932cc;
+}
+
+.box8 {
+  background: #ff69b4;
+}
+
+.box9 {
+  background: #4b0082;
+}
+
+.box10 {
+  background: #1e90ff;
+}
+/* ---------------- end box-styling --------------- */
+/* end middle-content */
+
+/* bottom-content */
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
+/* end bottom-content styling */
 
+/* footer styling */
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+/* end footer styling */
+
+/* about page specific styles */
+
+/* header */
+.about-page header {
+  border-bottom: dashed 1px black;
+  margin-bottom: 29px;
+}
+
+.header-about-text {
+  font-weight: 600;
+  padding: 24px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+/* end header */
+
+/* main content styling */
+#main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+.about-plan {
+  width: 48%;
+  padding-bottom: 30px;
+  border-bottom: dashed 1px black;
+  margin-bottom: 60px;
+}
+
+/* .about-plan:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 96%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+} */
+
+.about-working {
+  width: 48%;
+  border-bottom: dashed 1px black;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  margin-bottom: 60px;
+}
+
+/* .about-working:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 98%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+} */
+
+.about-office {
+  width: 48%;
+  border-bottom: dashed 1px black;
+  padding-bottom: 30px;
+  padding-right: 25px;
+}
+
+/* .about-office:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 96%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+} */
+
+.about-meeting {
+  width: 48%;
+  border-bottom: dashed 1px black;
+  padding-bottom: 30px;
+  padding-right: 25px;
+}
+
+/* .about-meeting:after {
+  content: '';
+  display: block;
+  margin: 14 auto;
+  width: 98%;
+  padding-top: 35px;
+  border-bottom: dashed 1px black;
+} */
+
+#main-content img {
+  padding-bottom: 15px;
+}
+
+#main-content a {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 8px 22px;
+  margin-bottom: 25px;
+}
+
+p.main-content-text {
+  padding-bottom: 25px;
+}
+/* end main content styling */
+
+/* about-bottom-content styling */
+#about-bottom-content {
+  padding: 50px 25px;
+}
+
+.about-bottom-text {
+  line-height: 25px;
+  font-weight: 700;
+}
+/* end about-bottom-content styling */
+
+/* footer styling */
+
+/* end footer styling */
+/* end about page specific styles */
